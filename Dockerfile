@@ -1,8 +1,10 @@
-FROM golang:1.9.0
+FROM golang:1.9.2-alpine
 
 # glide
-RUN GLIDE_VERSION=0.12.3 && \
+RUN GLIDE_VERSION=0.13.1 && \
     FILE=glide-v$GLIDE_VERSION-linux-amd64.tar.gz && \
+    apk update && \
+    apk add openssl git && \
     echo ========== && \
     echo FILE=$FILE && \
     echo ========== && \
