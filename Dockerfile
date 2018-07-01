@@ -1,4 +1,4 @@
-FROM golang:1.10.1-alpine3.7
+FROM golang:1.10.3-alpine3.7
 
 # glide
 RUN GLIDE_VERSION=0.13.1 && \
