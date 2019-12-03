@@ -1,5 +1,4 @@
-FROM golang:1.12.9-alpine3.10
-
+FROM golang:1.13.4-alpine3.10
 # glide
 RUN GLIDE_VERSION=0.13.3 && \
     FILE=glide-v$GLIDE_VERSION-linux-amd64.tar.gz && \
